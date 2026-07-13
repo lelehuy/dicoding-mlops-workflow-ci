@@ -58,12 +58,7 @@ def train_model():
         print(f"Accuracy : {acc:.4f}")
         print(f"F1-Score : {f1:.4f}")
         
-        # Log manual params/metrics (Kriteria Skilled/Advanced)
-        mlflow.log_param("dataset_name", "Breast Cancer Wisconsin Preprocessed")
-        mlflow.log_param("num_features", X_train.shape[1])
-        mlflow.log_metric("manual_test_accuracy", acc)
-        mlflow.log_metric("manual_test_f1", f1)
-        
+
         # Save model locally inside the same directory as this script
         model_local_path = os.path.join(current_dir, "model.joblib")
         joblib.dump(model, model_local_path)
