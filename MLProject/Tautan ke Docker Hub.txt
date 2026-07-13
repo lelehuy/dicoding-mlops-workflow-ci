@@ -1,0 +1,5 @@
+# Tautan ke Repository Docker Hub
+# TODO: Replace the dummy URL below with your actual Docker Hub repository link!
+# Example: https://hub.docker.com/r/your-username/your-repo-name
+
+https://hub.docker.com/r/username/dummy-mlops-service
