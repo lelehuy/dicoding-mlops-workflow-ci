@@ -25,4 +25,4 @@ jobs:
 
     - name: Run MLflow Project (Retrain Model)
       run: |
-        mlflow run MLProject --no-conda --env-manager=local
+        mlflow run MLProject --env-manager=local
